@@ -115,10 +115,7 @@
   letter-spacing: 0.5px;
   transition: color 0.2s ease-in-out;
 }
-#myfooter {
-  opacity: 0;
-  display: none;
-}
+
 .nav a::after {
   content: "";
   display: block;
@@ -332,6 +329,7 @@ span {
     margin-top: 0px;
     margin-bottom: 10px;
     text-decoration: none;
+    opacity: 1!important;
   }
 }
 
@@ -660,4 +658,17 @@ span {
   margin-bottom: 10px;
   text-decoration: none;
 }
+}
+
+
+@media only screen and (max-width:767px){
+  #myfooter{
+    display: none;
+    opacity: 0 !important;
+  }
+
+
+
+
+
 }
